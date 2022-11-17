@@ -54,8 +54,7 @@ public class Custom extends AppCompatActivity {
     }
 
     public void openGlossary() {
-        // TODO
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Glossary.class);
         startActivity(intent);
     }
 

@@ -7,24 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Track extends AppCompatActivity {
-    private Button done;
+public class Glossary extends AppCompatActivity {
     private Button toHome;
     private Button toPlanner;
-    private Button toGlossary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_track);
-
-        done = (Button) findViewById(R.id.track4);
-        done.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openWorkout();
-            }
-        });
+        setContentView(R.layout.activity_glossary);
 
         // bottom bar navigation buttons
         // home
@@ -40,23 +30,13 @@ public class Track extends AppCompatActivity {
         toPlanner = (Button) findViewById(R.id.planner_button);
         toPlanner.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { openPlanner(); }
-        });
-
-        // glossary
-        toGlossary = (Button) findViewById(R.id.glossary_button);
-        toGlossary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { openGlossary(); }
+            public void onClick(View view) {
+                openPlanner();
+            }
         });
     }
 
     // navigation methods
-    public void openWorkout(){
-        Intent intent = new Intent(this, Workout.class);
-        startActivity(intent);
-    }
-
     public void openHome(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
@@ -64,11 +44,6 @@ public class Track extends AppCompatActivity {
 
     public void openPlanner() {
         Intent intent = new Intent(this, Planner.class);
-        startActivity(intent);
-    }
-
-    public void openGlossary() {
-        Intent intent = new Intent(this, Glossary.class);
         startActivity(intent);
     }
 }

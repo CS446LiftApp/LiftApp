@@ -10,7 +10,6 @@ import android.widget.Button;
 public class Planner extends AppCompatActivity {
 
     private Button toHome;
-    private Button toPlanner;
     private Button toGlossary;
     private Button choice;
 
@@ -20,13 +19,13 @@ public class Planner extends AppCompatActivity {
         setContentView(R.layout.activity_planner);
 
         choice=findViewById(R.id.tues);
-        /*choice.setOnClickListener(new View.OnClickListener() {
+        choice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Planner.this, Choice.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         // bottom bar navigation buttons
         // home
@@ -36,13 +35,6 @@ public class Planner extends AppCompatActivity {
             public void onClick(View view) {
                 openHome();
             }
-        });
-
-        // planner
-        toPlanner = (Button) findViewById(R.id.planner_button);
-        toPlanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) { openPlanner(); }
         });
 
         // glossary
@@ -59,15 +51,8 @@ public class Planner extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openPlanner() {
-        // TODO
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void openGlossary() {
-        // TODO
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Glossary.class);
         startActivity(intent);
     }
 

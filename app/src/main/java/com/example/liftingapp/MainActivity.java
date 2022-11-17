@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCustomWorkout() {
-        // TODO
         Intent intent = new Intent(this, Custom.class);
         startActivity(intent);
     }
@@ -84,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openGlossary() {
-        // TODO
-        Intent intent = new Intent(this, Profile.class);
+        Intent intent = new Intent(this, Glossary.class);
         startActivity(intent);
     }
 }

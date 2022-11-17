@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Track extends AppCompatActivity {
-    private Button done;
+public class Choice extends AppCompatActivity {
     private Button toHome;
     private Button toPlanner;
     private Button toGlossary;
@@ -16,15 +15,7 @@ public class Track extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_track);
-
-        done = (Button) findViewById(R.id.track4);
-        done.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openWorkout();
-            }
-        });
+        setContentView(R.layout.activity_choice);
 
         // bottom bar navigation buttons
         // home
@@ -40,7 +31,9 @@ public class Track extends AppCompatActivity {
         toPlanner = (Button) findViewById(R.id.planner_button);
         toPlanner.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { openPlanner(); }
+            public void onClick(View view) {
+                openPlanner();
+            }
         });
 
         // glossary
@@ -52,11 +45,6 @@ public class Track extends AppCompatActivity {
     }
 
     // navigation methods
-    public void openWorkout(){
-        Intent intent = new Intent(this, Workout.class);
-        startActivity(intent);
-    }
-
     public void openHome(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
