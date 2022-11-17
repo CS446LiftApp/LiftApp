@@ -5,8 +5,8 @@
 
     // navigation buttons
     <string name="home_button_text">Home</string>
-    <string name="planner_button_text">Planner</string>
-    <string name="glossary_button_text">Glossary</string>
+    <string name="planner_button">Planner</string>
+    <string name="glossary_button">Glossary</string>
 
     // home page
     <string name="welcome_text">Welcome</string>
@@ -44,4 +44,13 @@
     // content description (for accessibility purposes)
     <string name="pfp_content_description">profile picture</string>
     <string name="video_content_description">example video</string>
+    <string name="title_activity_custom">Custom</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

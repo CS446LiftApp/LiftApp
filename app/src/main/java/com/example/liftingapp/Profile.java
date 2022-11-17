@@ -9,21 +9,54 @@ import android.widget.Button;
 
 public class Profile extends AppCompatActivity {
     private Button toHome;
+    private Button toPlanner;
+    private Button toGlossary;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        toHome = (Button) findViewById(R.id.toHome2);
+        // bottom bar navigation buttons
+        // home
+        toHome = (Button) findViewById(R.id.home_button);
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openHome();
             }
         });
+
+        // planner
+        toPlanner = (Button) findViewById(R.id.planner_button);
+        toPlanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openPlanner(); }
+        });
+
+        // glossary
+        toGlossary = (Button) findViewById(R.id.glossary_button);
+        toGlossary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openGlossary(); }
+        });
     }
+
+    // navigation methods
     public void openHome(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPlanner() {
+        // TODO
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGlossary() {
+        // TODO
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

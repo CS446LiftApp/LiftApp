@@ -8,21 +8,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
+    private Button toWorkout;
     private Button toProfile;
+    private Button toCustomWorkout;
+    private Button toPlanner;
+    private Button toGlossary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.toWorkout);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openWorkout();
-            }
-        });
+        // view profile button
         toProfile = (Button) findViewById(R.id.toProfile);
         toProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,12 +28,64 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // customize workout button
+        toCustomWorkout = (Button) findViewById(R.id.customize);
+        toProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCustomWorkout();
+            }
+        });
+
+        // start workout button
+        toWorkout = (Button) findViewById(R.id.toWorkout);
+        toWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWorkout();
+            }
+        });
+
+        // bottom bar navigation buttons
+        // planner
+        toPlanner = (Button) findViewById(R.id.planner_button);
+        toPlanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openPlanner(); }
+        });
+
+        // glossary
+        toGlossary = (Button) findViewById(R.id.glossary_button);
+        toGlossary.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) { openGlossary(); }
+        });
     }
+
+    // navigation methods
     public void openWorkout(){
         Intent intent = new Intent(this, Workout.class);
         startActivity(intent);
     }
     public void openProfile(){
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+    }
+
+    public void openCustomWorkout() {
+        // TODO
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+    }
+
+    public void openPlanner() {
+        // TODO
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+    }
+
+    public void openGlossary() {
+        // TODO
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }

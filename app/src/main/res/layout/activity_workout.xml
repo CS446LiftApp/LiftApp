@@ -13,10 +13,11 @@
         android:layout_height="80sp"
         android:layout_marginStart="8sp"
         android:layout_marginEnd="8sp"
-        android:layout_marginBottom="64sp"
-        android:text="@string/end_workout_button_text"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/end_workout_button_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -27,8 +28,9 @@
         android:layout_marginStart="8sp"
         android:layout_marginTop="128sp"
         android:layout_marginEnd="8sp"
-        android:text="@string/bench_press_text"
         android:backgroundTint="@color/red"
+        android:text="@string/bench_press_text"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +43,9 @@
         android:layout_marginStart="8sp"
         android:layout_marginTop="16sp"
         android:layout_marginEnd="8sp"
-        android:text="@string/triceps_dips_text"
         android:backgroundTint="@color/red"
+        android:text="@string/triceps_dips_text"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,8 +58,9 @@
         android:layout_marginStart="8sp"
         android:layout_marginTop="16sp"
         android:layout_marginEnd="8sp"
-        android:text="@string/arnold_press_text"
         android:backgroundTint="@color/red"
+        android:text="@string/arnold_press_text"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,5 +77,53 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/dark_red"
+
+            android:text="@string/home_button_text"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/planner_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/dark_red"
+            android:text="@string/planner_button"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glossary_button"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/home_button"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/glossary_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/dark_red"
+            android:text="@string/glossary_button"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

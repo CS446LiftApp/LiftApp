@@ -12,6 +12,8 @@ public class Workout extends AppCompatActivity {
     private Button toTricepDips;
     private Button toArnoldPress;
     private Button toHome;
+    private Button toPlanner;
+    private Button toGlossary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,7 @@ public class Workout extends AppCompatActivity {
         toTricepDips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openTricepDips();
+                openTricepsDips();
             }
         });
 
@@ -49,17 +51,45 @@ public class Workout extends AppCompatActivity {
                 openHome();
             }
         });
+
+        // bottom bar navigation buttons
+        // home
+        toHome = (Button) findViewById(R.id.home_button);
+        toHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHome();
+            }
+        });
+
+        // planner
+        toPlanner = (Button) findViewById(R.id.planner_button);
+        toPlanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openPlanner(); }
+        });
+
+        // glossary
+        toGlossary = (Button) findViewById(R.id.glossary_button);
+        toGlossary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openGlossary(); }
+        });
+
     }
+
+    // navigation methods
     public void openBench(){
         Intent intent = new Intent(this, Bench.class);
         startActivity(intent);
     }
+
     public void openArnoldPress(){
         Intent intent = new Intent(this, ArnoldPress.class);
         startActivity(intent);
     }
 
-    public void openTricepDips(){
+    public void openTricepsDips(){
         Intent intent = new Intent(this, TricepDips.class);
         startActivity(intent);
     }
@@ -68,4 +98,17 @@ public class Workout extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void openPlanner() {
+        // TODO
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGlossary() {
+        // TODO
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
