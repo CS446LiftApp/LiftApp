@@ -56,4 +56,6 @@
     <string name="monday_text">M</string>
     <string name="pull">Pull</string>
     <string name="press">Press</string>
+    <string name="custom_header_text">Create Custom Workout</string>
+    <string name="title_text">Title</string>
 </resources>

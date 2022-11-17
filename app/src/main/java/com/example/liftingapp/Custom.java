@@ -11,11 +11,19 @@ public class Custom extends AppCompatActivity {
     private Button toHome;
     private Button toPlanner;
     private Button toGlossary;
+    private Button crunches;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
+
+        // add crunches task
+        crunches = (Button) findViewById(R.id.crunch);
+        crunches.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) { addCrunches(); }
+        });
 
         // bottom bar navigation buttons
         // home
@@ -58,4 +66,8 @@ public class Custom extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void addCrunches() {
+        Intent intent = new Intent(this, CustomAddFirst.class);
+        startActivity(intent);
+    }
 }

@@ -18,7 +18,7 @@ public class Track extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
 
-        done = (Button) findViewById(R.id.track4);
+        done = (Button) findViewById(R.id.done_button);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

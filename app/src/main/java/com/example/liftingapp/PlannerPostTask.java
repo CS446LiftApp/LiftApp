@@ -7,23 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Choice extends AppCompatActivity {
+public class PlannerPostTask extends AppCompatActivity {
+
     private Button toHome;
-    private Button toPlanner;
     private Button toGlossary;
-    private Button legs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choice);
-
-        // scenario task: select 'legs'
-        legs = (Button) findViewById(R.id.Legs);
-        legs.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) { openPostTaskPlanner(); }
-        });
+        setContentView(R.layout.activity_planner_post_task);
 
         // bottom bar navigation buttons
         // home
@@ -32,15 +24,6 @@ public class Choice extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openHome();
-            }
-        });
-
-        // planner
-        toPlanner = (Button) findViewById(R.id.planner_button);
-        toPlanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openPlanner();
             }
         });
 
@@ -58,18 +41,9 @@ public class Choice extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openPlanner() {
-        Intent intent = new Intent(this, Planner.class);
-        startActivity(intent);
-    }
-
     public void openGlossary() {
         Intent intent = new Intent(this, Glossary.class);
         startActivity(intent);
     }
 
-    public void openPostTaskPlanner() {
-        Intent intent = new Intent(this, PlannerPostTask.class);
-        startActivity(intent);
-    }
 }

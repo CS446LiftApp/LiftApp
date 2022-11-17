@@ -7,22 +7,35 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Choice extends AppCompatActivity {
+public class CustomAddFirstPageTwo extends AppCompatActivity {
+
     private Button toHome;
     private Button toPlanner;
     private Button toGlossary;
-    private Button legs;
+    private Button lateralRaise;
+    private Button done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choice);
+        setContentView(R.layout.activity_custom_add_first_page_two);
 
-        // scenario task: select 'legs'
-        legs = (Button) findViewById(R.id.Legs);
-        legs.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) { openPostTaskPlanner(); }
+        // add lateral raise
+        lateralRaise = (Button) findViewById(R.id.lateral_raise);
+        lateralRaise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addLateralRaise();
+            }
+        });
+
+        // done button
+        done = (Button) findViewById(R.id.done_button);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHome();
+            }
         });
 
         // bottom bar navigation buttons
@@ -39,9 +52,7 @@ public class Choice extends AppCompatActivity {
         toPlanner = (Button) findViewById(R.id.planner_button);
         toPlanner.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                openPlanner();
-            }
+            public void onClick(View view) { openPlanner(); }
         });
 
         // glossary
@@ -68,8 +79,8 @@ public class Choice extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openPostTaskPlanner() {
-        Intent intent = new Intent(this, PlannerPostTask.class);
+    public void addLateralRaise() {
+        Intent intent = new Intent(this, CustomAddSecond.class);
         startActivity(intent);
     }
 }
