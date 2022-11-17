@@ -63,8 +63,7 @@ public class Track extends AppCompatActivity {
     }
 
     public void openPlanner() {
-        // TODO
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Planner.class);
         startActivity(intent);
     }
 

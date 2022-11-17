@@ -7,16 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Profile extends AppCompatActivity {
+public class Custom extends AppCompatActivity {
     private Button toHome;
     private Button toPlanner;
     private Button toGlossary;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_custom);
 
         // bottom bar navigation buttons
         // home
@@ -59,4 +58,5 @@ public class Profile extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
 }

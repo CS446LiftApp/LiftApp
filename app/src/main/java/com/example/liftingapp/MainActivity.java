@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         // customize workout button
         toCustomWorkout = (Button) findViewById(R.id.customize);
-        toProfile.setOnClickListener(new View.OnClickListener() {
+        toCustomWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openCustomWorkout();
@@ -74,13 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCustomWorkout() {
         // TODO
-        Intent intent = new Intent(this, Profile.class);
+        Intent intent = new Intent(this, Custom.class);
         startActivity(intent);
     }
 
     public void openPlanner() {
-        // TODO
-        Intent intent = new Intent(this, Profile.class);
+        Intent intent = new Intent(this, Planner.class);
         startActivity(intent);
     }
 

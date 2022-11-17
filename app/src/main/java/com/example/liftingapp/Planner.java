@@ -7,16 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Profile extends AppCompatActivity {
+public class Planner extends AppCompatActivity {
+
     private Button toHome;
     private Button toPlanner;
     private Button toGlossary;
-
+    private Button choice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_planner);
+
+        choice=findViewById(R.id.tues);
+        /*choice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Planner.this, Choice.class);
+                startActivity(intent);
+            }
+        });*/
 
         // bottom bar navigation buttons
         // home
@@ -50,7 +60,8 @@ public class Profile extends AppCompatActivity {
     }
 
     public void openPlanner() {
-        Intent intent = new Intent(this, Planner.class);
+        // TODO
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -59,4 +70,5 @@ public class Profile extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
 }
