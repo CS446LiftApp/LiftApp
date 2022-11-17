@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".Workout">
+
+    <Button
+        android:id="@+id/toHome"
+        android:layout_width="0sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="64sp"
+        android:text="@string/end_workout_button_text"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/toBench"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="128sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/bench_press_text"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toTricepDips"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/triceps_dips_text"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toArnoldPress" />
+
+    <Button
+        android:id="@+id/toArnoldPress"
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="8sp"
+        android:text="@string/arnold_press_text"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toBench" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/push_header_text"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

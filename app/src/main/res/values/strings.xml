@@ -1,0 +1,47 @@
+<resources>
+    // general
+    <string name="app_name">liftingapp</string>
+    <string name="push_header_text">Push Workout</string>
+
+    // navigation buttons
+    <string name="home_button_text">Home</string>
+    <string name="planner_button_text">Planner</string>
+    <string name="glossary_button_text">Glossary</string>
+
+    // home page
+    <string name="welcome_text">Welcome</string>
+    <string name="back_text">Back!</string>
+    <string name="view_profile_text">View Profile</string>
+    <string name="customize_button_text">Customize Workout</string>
+    <string name="start_workout_text">Start Workout!</string>
+
+    // workout page
+    <string name="end_workout_button_text">End Workout</string>
+
+    // names of workouts
+    <string name="bench_press_text">Bench Press</string>
+    <string name="triceps_dips_text">Triceps Dips</string>
+    <string name="arnold_press_text">Arnold Press</string>
+
+    // workout descriptions
+    <string name="arnold_press_description">1. Sit on a bench with dumbbells held in front of you, palms facing your shoulders as though you\'ve just finished a bicep curl. \n2. Push the dumbbells up over your head while rotating your arms until your palms face away from you. \n3. Straighten your arms, pause, then reverse the movement.</string>
+    <string name="triceps_dips_description">1. Grab the bars of a dip station with your palms facing inward and your arms straight. \n2. Slowly lower until your elbows are at right angles, ensuring they stay tucked against your body and don\'t flare out. \n3. Drive yourself back up to the top and repeat.</string>
+    <string name="bench_press_description">1. Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders. \n2. Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. \n3. Keep your core engaged and maintain a neutral spine position throughout the movement. Avoid arching your back. \n4. Slowly lift the bar or dumbbells off the rack, if using. Lower the bar to the chest, about nipple level, allowing elbows to bend out to the side, about 45 degrees away from the body. \n5. Stop lowering when your elbows are just below the bench. Press feet into the floor as you push the bar back up to return to starting position.</string>
+
+    // track page
+    <string name="track_header_text">Track Lift</string>
+    <string name="weight_text">Weight</string>
+    <string name="sets_text">Sets</string>
+    <string name="reps_text">Reps</string>
+    <string name="done_button_text">Done!</string>
+
+    // stats page
+    <string name="bench_200_text">Bench: 200</string>
+    <string name="user_555_text">User 555</string>
+    <string name="triceps_dips_30_text">Triceps Dips: 30</string>
+    <string name="arnold_press_50_text">Arnold Press: 50</string>
+
+    // content description (for accessibility purposes)
+    <string name="pfp_content_description">profile picture</string>
+    <string name="video_content_description">example video</string>
+</resources>
