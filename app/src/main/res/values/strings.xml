@@ -58,4 +58,6 @@
     <string name="press">Press</string>
     <string name="custom_header_text">Create Custom Workout</string>
     <string name="title_text">Title</string>
+
+    <string name="V">.....V</string>
 </resources>
