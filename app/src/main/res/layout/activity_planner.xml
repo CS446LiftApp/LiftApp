@@ -7,6 +7,102 @@
     android:background="@color/cardview_dark_background"
     tools:context=".Planner">
 
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347" />
+
     <TextView
         android:layout_width="411dp"
         android:layout_height="70dp"
@@ -22,6 +118,24 @@
 
 
     <!--monday -->
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        android:contentDescription="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
+
     <TextView
         android:layout_width="75dp"
         android:layout_height="60dp"
@@ -36,35 +150,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.168" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="@string/pull"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
-
-    <Button
-        android:id="@+id/monday"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="@string/press"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
 
 
     <!--Tuesday -->
@@ -84,49 +169,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.257" />
 
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Rest"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
-
-    <Button
-        android:id="@+id/tues"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
     <!--Wednesday -->
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Push"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
 
     <TextView
         android:layout_width="75dp"
@@ -143,34 +186,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.347" />
 
-    <Button
-        android:id="@+id/wednesday"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
-
     <!--Thursday -->
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Pull"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
 
     <TextView
         android:layout_width="75dp"
@@ -187,34 +203,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.436" />
 
-    <Button
-        android:id="@+id/Thurs"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
     <!--Friday -->
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Rest"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:layout_width="75dp"
@@ -231,34 +220,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.526" />
 
-    <Button
-        android:id="@+id/Fri"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
     <!--Saturday -->
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Legs"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
 
     <TextView
         android:layout_width="75dp"
@@ -275,34 +237,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.615" />
 
-    <Button
-        android:id="@+id/Sat"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
     <!--Sunday -->
-
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/red"
-        android:text="Push"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
 
     <TextView
         android:layout_width="75dp"
@@ -318,19 +253,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.703" />
-
-    <Button
-        android:id="@+id/Sun"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:text="press"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
