@@ -43,6 +43,7 @@
         android:layout_width="0sp"
         android:layout_height="48sp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/red"
         android:text="Crunches"
@@ -53,141 +54,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleEntry" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintTop_toBottomOf="@+id/crunch"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <Button
-        android:id="@+id/arnoldPress"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="0sp"
         android:layout_height="48sp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="Arnold Press"
+        android:background="@color/red"
+        android:contentDescription="+"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/crunch" />
-
-    <Button
-        android:id="@+id/backExtension"
-        android:layout_width="0sp"
-        android:layout_height="48sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="Back Extension"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arnoldPress" />
-
-    <Button
-        android:id="@+id/backSquat"
-        android:layout_width="0sp"
-        android:layout_height="48sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="Back Squat"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backExtension" />
-
-    <Button
-        android:id="@+id/benchPress"
-        android:layout_width="0sp"
-        android:layout_height="48sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="@string/bench_press_text"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backSquat" />
-
-    <Button
-        android:id="@+id/bicepsCurl"
-        android:layout_width="0sp"
-        android:layout_height="48sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="Biceps Curl"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/benchPress" />
-
-    <Button
-        android:id="@+id/chestFlys"
-        android:layout_width="0sp"
-        android:layout_height="48sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/lighter_red"
-        android:text="Chest Flys"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bicepsCurl" />
-
-    <LinearLayout
-        android:id="@+id/next_prev_buttons"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/done_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chestFlys">
-
-        <Button
-            android:id="@+id/previous_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/red"
-            android:text="Previous"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteY="519dp" />
-
-        <Button
-            android:id="@+id/next_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/red"
-            android:text="Next"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteY="519dp" />
-
-    </LinearLayout>
 
     <Button
         android:id="@+id/done_button"
