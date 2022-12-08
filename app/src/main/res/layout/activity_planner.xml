@@ -11,99 +11,82 @@
         android:id="@+id/spinner6"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Spinner
         android:id="@+id/spinner5"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
 
     <Spinner
         android:id="@+id/spinner4"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="411dp"
         android:layout_height="70dp"
         android:layout_marginTop="32dp"
@@ -120,23 +103,33 @@
     <!--monday -->
 
 
+    <!--Tuesday -->
+
+    <!--Wednesday -->
+
+    <!--Thursday -->
+
+    <!--Friday -->
+
+    <!--Saturday -->
+
+    <!--Sunday -->
+
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="300dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/red"
         android:contentDescription="@string/V"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner6" />
 
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="75dp"
         android:layout_height="60dp"
         android:background="@color/red"
@@ -144,34 +137,27 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/spinner6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-
-    <!--Tuesday -->
     <TextView
+        android:id="@+id/tuesday"
         android:layout_width="75dp"
         android:layout_height="60dp"
         android:background="@color/red"
         android:text="T"
-        android:id="@+id/tuesday"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/spinner1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
-
-    <!--Wednesday -->
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
+        android:id="@+id/textView18"
         android:layout_width="75dp"
         android:layout_height="60dp"
         android:background="@color/red"
@@ -179,33 +165,28 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
-
-    <!--Thursday -->
+        app:layout_constraintTop_toBottomOf="@+id/tuesday" />
 
     <TextView
+        android:id="@+id/textView19"
         android:layout_width="75dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:background="@color/red"
         android:text="Th"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
-
-    <!--Friday -->
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
+        android:id="@+id/textView22"
         android:layout_width="75dp"
         android:layout_height="60dp"
         android:background="@color/red"
@@ -213,46 +194,40 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/spinner3"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
-
-    <!--Saturday -->
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
+        android:id="@+id/textView21"
         android:layout_width="75dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:background="@color/red"
         android:text="Sa"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
-
-    <!--Sunday -->
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
+        android:id="@+id/textView15"
         android:layout_width="75dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:background="@color/red"
         android:text="Su"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
