@@ -5,7 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.Spinner;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class CustomAddSecond extends AppCompatActivity {
 
@@ -18,6 +24,13 @@ public class CustomAddSecond extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_add_second);
+
+        final List<String> exercises = Arrays.asList("+", "Arnold Press", "Back Extension", "Back Squat", "Bench Press", "Biceps Curl", "Chest Flys", "Crunches", "Deadlift", "Lateral Raise", "Leg Curls", "Leg Press", "Lunge", "Military Press", "Pull-Downs", "Pull-Ups", "Push-Downs", "Push-Ups", "Shoulder Press", "Triceps Dips");
+        Spinner spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(), R.layout.spinner, exercises);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
         // done button
         done = (Button) findViewById(R.id.done_button);
